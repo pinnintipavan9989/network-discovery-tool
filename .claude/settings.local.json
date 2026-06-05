@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(.\\\\venv\\\\Scripts\\\\pip.exe install -r requirements.txt)",
+      "PowerShell(.\\\\venv\\\\Scripts\\\\python.exe -c \"import network.cdp, network.vlan, network.svi, network.etherchannel, network.discovery; import PyQt6.QtWidgets, netmiko, pandas, openpyxl; print\\('All imports OK — Genie fallback mode active'\\)\")",
+      "PowerShell(.\\\\venv\\\\Scripts\\\\python.exe main.py)"
+    ]
+  }
+}

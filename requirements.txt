@@ -1,0 +1,25 @@
+# Network Discovery Tool — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# GUI
+PyQt6>=6.6.0
+
+# SSH / Network
+netmiko>=4.3.0
+paramiko>=3.4.0
+
+# Parsing (Genie/pyATS) — OPTIONAL: Linux/macOS only (no Windows wheels exist).
+# The app automatically falls back to built-in regex parsers when Genie is absent.
+pyats>=23.9; sys_platform != "win32"
+genie>=23.9; sys_platform != "win32"
+
+# Data / Excel
+pandas>=2.1.0
+openpyxl>=3.1.2
+xlrd>=2.0.1
+
+# Utilities
+python-dateutil>=2.8.2
+
+# Development / packaging (optional)
+pyinstaller>=6.0.0
