@@ -20,7 +20,7 @@ from config import AppConfig
 
 def setup_logging() -> None:
     """Configure root logger before GUI starts."""
-    log_dir = Path("logddddddd")
+    log_dir = Path("logs")
     log_dir.mkdir(exist_ok=True)
 
     from logging.handlers import RotatingFileHandler
