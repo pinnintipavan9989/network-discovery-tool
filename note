@@ -1,0 +1,4 @@
+<!-- echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo ".claude/" >> .gitignore
+echo ".claudesettings" >> .gitignore -->

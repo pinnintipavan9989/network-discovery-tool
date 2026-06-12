@@ -12,3 +12,73 @@
 2026-06-05 12:54:22 | INFO     | __main__                       | ============================================================
 2026-06-05 12:54:22 | INFO     | gui.main_window                | Main window initialized.
 2026-06-05 12:54:23 | INFO     | __main__                       | GUI launched successfully
+2026-06-05 12:55:56 | DEBUG    | network.ssh_client             | SSH attempt 1/2 to 10.10.10.1
+2026-06-05 12:55:56 | DEBUG    | network.ssh_client             | SSH attempt 1/2 to 10.10.10.2
+2026-06-05 12:55:56 | DEBUG    | network.ssh_client             | SSH attempt 1/2 to 10.10.10.3
+2026-06-05 12:56:06 | WARNING  | network.ssh_client             | Connection attempt 1 failed for 10.10.10.3: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xe 10.10.10.3:22
+
+
+2026-06-05 12:56:06 | WARNING  | network.ssh_client             | Connection attempt 1 failed for 10.10.10.2: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.2:22
+
+
+2026-06-05 12:56:06 | WARNING  | network.ssh_client             | Connection attempt 1 failed for 10.10.10.1: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.1:22
+
+
+2026-06-05 12:56:06 | DEBUG    | network.ssh_client             | SSH attempt 2/2 to 10.10.10.3
+2026-06-05 12:56:06 | DEBUG    | network.ssh_client             | SSH attempt 2/2 to 10.10.10.2
+2026-06-05 12:56:06 | DEBUG    | network.ssh_client             | SSH attempt 2/2 to 10.10.10.1
+2026-06-05 12:56:16 | WARNING  | network.ssh_client             | Connection attempt 2 failed for 10.10.10.1: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.1:22
+
+
+2026-06-05 12:56:16 | WARNING  | network.discovery              | [10.10.10.1] Discovery FAILED: SSH Timeout
+2026-06-05 12:56:16 | WARNING  | network.ssh_client             | Connection attempt 2 failed for 10.10.10.3: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xe 10.10.10.3:22
+
+
+2026-06-05 12:56:16 | WARNING  | network.ssh_client             | Connection attempt 2 failed for 10.10.10.2: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.2:22
+
+
+2026-06-05 12:56:16 | WARNING  | network.discovery              | [10.10.10.2] Discovery FAILED: SSH Timeout
+2026-06-05 12:56:16 | WARNING  | network.discovery              | [10.10.10.3] Discovery FAILED: SSH Timeout
+2026-06-05 12:56:16 | INFO     | excel.report_generator         | Report saved: C:\Users\PAVAN\Downloads\network_discovery_app\network_discovery_app\reports\network_discovery_20260605_125616.xlsx
